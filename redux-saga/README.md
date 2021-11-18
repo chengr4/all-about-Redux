@@ -25,6 +25,8 @@ function* fetchProducts() {
 }
 ```
 
+### Dispatching actions to the store
+
 ## Terms
 
 Effect: An Effect is an object that **contains some information** to be interpreted by the **middleware**
