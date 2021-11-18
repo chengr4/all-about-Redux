@@ -4,7 +4,8 @@
 
 ### Basic Concepts
 
-- [ ] [Declarative Effects](https://redux-saga.js.org/docs/basics/DeclarativeEffects)
+- [x] [Declarative Effects](https://redux-saga.js.org/docs/basics/DeclarativeEffects)
+- [ ] [Dispatching actions to the store](https://redux-saga.js.org/docs/basics/DispatchingActions#dispatching-actions-to-the-store)
 
 ## References
 
