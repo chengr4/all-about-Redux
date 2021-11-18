@@ -6,7 +6,8 @@
 
 - [x] [Declarative Effects](https://redux-saga.js.org/docs/basics/DeclarativeEffects)
 - [x] [Dispatching actions to the store](https://redux-saga.js.org/docs/basics/DispatchingActions#dispatching-actions-to-the-store)
-- [ ] [A common abstraction: Effect](https://redux-saga.js.org/docs/basics/Effect)
+- [x] [A common abstraction: Effect](https://redux-saga.js.org/docs/basics/Effect)
+- [ ] [Error handling](https://redux-saga.js.org/docs/basics/ErrorHandling)
 
 ## References
 
