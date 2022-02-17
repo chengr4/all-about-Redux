@@ -1,6 +1,16 @@
 # All About Redux
 
+## Redux
+
+> GOTO [Redux](./redux)
+
+### Redux Fundamentals
+
+- [ ] [Standard Redux Patterns](https://redux.js.org/tutorials/fundamentals/part-7-standard-patterns)
+
 ## Redux-Saga
+
+> GOTO [Redux-Saga](./redux-saga)
 
 ### Basic Concepts
 
