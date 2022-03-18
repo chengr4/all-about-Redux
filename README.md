@@ -4,6 +4,12 @@
 
 > GOTO [Redux](./redux)
 
+### Q/A
+
+Q: Can states changed by side effect be save at local instead of global (store)?
+
+A: (wait for answering)
+
 ### Redux Fundamentals
 
 - [ ] [Standard Redux Patterns](https://redux.js.org/tutorials/fundamentals/part-7-standard-patterns)
