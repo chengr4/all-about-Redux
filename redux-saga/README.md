@@ -7,7 +7,7 @@
 
 > Compensating Transaction (Request) must be idempotent (一直 retry 直到成功為止 )
 
-## `takeLatest` vs. `takeEvery`
+## `takeLatest` vs `takeEvery`
 
 `takeLatest`: Forks a `saga` (a generator funcntion) on each action dispatched to the Store that matches pattern. And automatically **cancels** any previous `saga` task started previously if it's still running.
 
@@ -17,6 +17,10 @@
 `takeEvery`: Spawns a `saga` on each action dispatched to the Store that matches pattern.
 
 > 允許多個 saga task 同時被 fork
+
+## `put` vs `putResolve`
+
+https://codesandbox.io/s/redux-saga-example-x77jb?file=/sagas/index.js
 
 ## Basic Concepts
 
