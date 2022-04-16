@@ -1,5 +1,10 @@
 # Redux-Saga
 
+- [Sagas](#sagas)
+- [Basic Concepts](#basic-concepts)
+- [Advanced Concepts](#advanced-concepts)
+- [Blocking / Non-blocking](#blocking--non-blocking)
+
 ## Sagas
 
 - A Saga is a Collection of Sub-Transactions (T1, T2, T3, ..., Tn)
@@ -22,6 +27,10 @@
 
 https://codesandbox.io/s/redux-saga-example-x77jb?file=/sagas/index.js
 
+## Terms
+
+- Effect: An Effect is an object that **contains some information** to be interpreted by the **middleware**
+
 ## Basic Concepts
 
 ### Declarative Effects
@@ -42,10 +51,20 @@ function* fetchProducts() {
 
 ### Dispatching actions to the store
 
-## Terms
+## Advanced Concepts
 
-Effect: An Effect is an object that **contains some information** to be interpreted by the **middleware**
+### Using Channels
 
+- `actionChannel`
+  -   
+
+## Blocking / Non-blocking
+
+| Name | Blocking |
+| ---- | -------- |
+| call | Y |
+| put | N |
+| fork | N |
 
 
 ## References
