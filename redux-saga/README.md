@@ -52,3 +52,4 @@ Effect: An Effect is an object that **contains some information** to be interpre
 
 1. [Applying the Saga Pattern • Caitie McCaffrey • GOTO 2015](https://youtu.be/xDuwrtwYHu8)
 2. https://github.com/redux-saga/redux-saga
+3. https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/understanding-redux-saga-148d7f070fa
