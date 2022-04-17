@@ -31,9 +31,11 @@ https://codesandbox.io/s/redux-saga-example-x77jb?file=/sagas/index.js
 
 - Effect: An Effect is an object that **contains some information** to be interpreted by the **middleware**
 
+---
+
 ## Basic Concepts
 
-### Declarative Effects
+## Declarative Effects
 
 - To create Effects, you use the functions provided by the library in the `redux-saga/effects` package.
 
@@ -49,14 +51,39 @@ function* fetchProducts() {
 }
 ```
 
-### Dispatching actions to the store
+## Dispatching actions to the store
+
+---
 
 ## Advanced Concepts
 
-### Using Channels
+## Using Channels
 
-- `actionChannel`
-  -   
+### Using the `actionChannel` Effect
+
+- `actionChannel` can buffer immcoming messages if the Saga is not yet ready to take them (eg blocked on an API call)
+
+```mermaid
+  flowchart LR
+    action --> ac["actionChannel (buffer)"] --> take
+```
+
+- `take`
+  - with pattern (specific action)
+  - with channel 
+
+```javascript
+const {payload} = yield take('REQUEST')
+const {payload} = yield take(ChannelObject)
+```
+
+The important thing to note is how we're using a blocking `call`. The Saga will remain blocked until `call(handleRequest)` returns. But meanwhile, if other `REQUEST` actions are dispatched while the Saga is still blocked, they will queued internally by `requestChan`. When the Saga resumes from `call(handleRequest)` and executes the next `yield take(requestChan)`, the `take` will resolve with the queued message.
+
+### Using the `eventChannel` factory to connect to external events
+
+> `eventChannel` is a factory function, not an Effect
+
+... to be continued
 
 ## Blocking / Non-blocking
 
@@ -65,6 +92,8 @@ function* fetchProducts() {
 | call | Y |
 | put | N |
 | fork | N |
+| take | Y |
+| take(channel) | Sometimes (see API reference) |
 
 
 ## References
