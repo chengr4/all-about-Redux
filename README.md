@@ -30,6 +30,8 @@ A: (wait for answering)
 
 - [ ] [Using Channels](https://redux-saga.js.org/docs/advanced/Channels)
 
+> next begin with `eventChannel`
+
 ## References
 
 1. [Redux-Saga](https://redux-saga.js.org/docs/introduction/GettingStarted)
