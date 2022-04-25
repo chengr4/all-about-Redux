@@ -57,6 +57,7 @@ function* fetchProducts() {
 
 ## Advanced Concepts
 
+
 ## Using Channels
 
 ### Using the `actionChannel` Effect
@@ -95,6 +96,10 @@ The important thing to note is how we're using a blocking `call`. The Saga will 
 | take | Y |
 | take(channel) | Sometimes (see API reference) |
 
+
+## Testing Sagas
+
+- https://github.com/jfairbank/redux-saga-test-plan
 
 ## References
 
