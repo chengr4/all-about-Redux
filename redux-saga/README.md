@@ -100,6 +100,7 @@ The important thing to note is how we're using a blocking `call`. The Saga will 
 ## Testing Sagas
 
 - https://github.com/jfairbank/redux-saga-test-plan
+- [About nested generator calls](https://github.com/redux-saga/redux-saga/issues/1245)
 
 ## References
 
