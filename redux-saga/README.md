@@ -14,6 +14,8 @@
 
 ## `takeLatest` vs `takeEvery`
 
+> https://stackoverflow.com/questions/61984294/takeevery-and-takelatest-why-when-to-use-use-simultaneously
+
 `takeLatest`: Forks a `saga` (a generator funcntion) on each action dispatched to the Store that matches pattern. And automatically **cancels** any previous `saga` task started previously if it's still running.
 
 > 除了停止前一個正在執行的 saga 外，即使 watcher 短時間內收到多個 action，還是只會啟用最後那個 saga. 
